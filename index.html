@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Ordering</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Logo -->
+    <a href="index.html">
+        <img src="./images/logo.png" alt="Website Logo" class="logo">
+    </a>
+  
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <button class="toggle-section" data-section="fruits">Fruits</button>
+            <button class="toggle-section" data-section="vegetables">Vegetables</button>
+            <button class="toggle-section" data-section="dairy">Dairy Produce</button>
+            <button class="toggle-section" data-section="meat">Meat and Seafood</button>
+            <button class="toggle-section" data-section="baking">Baking and Cooking Ingredients</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Fruits Section -->
+            <div id="fruits" class="product-section hidden">
+                <h2>Fruits</h2>
+                <div class="product" data-price="300">
+                    <img src="./images/apple.jpg" alt="Apple">
+                    <div class="product-info">
+                        <p>Apples</p>
+                        <p class="price">₨ 300</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="200">
+                    <img src="./images/orange.png" alt="Orange">
+                    <div class="product-info">
+                        <p>Orange</p>
+                        <p class="price">₨ 200</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="100">
+                    <img src="./images/mango.png" alt="Mango">
+                    <div class="product-info">
+                        <p>Mango</p>
+                        <p class="price">₨ 100</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="400">
+                    <img src="./images/avocado.png" alt="Avocado">
+                    <div class="product-info">
+                        <p>Avocado</p>
+                        <p class="price">₨ 400</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="200">
+                    <img src="./images/banana.png" alt="Banana">
+                    <div class="product-info">
+                        <p>Banana</p>
+                        <p class="price">₨ 200</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="400">
+                    <img src="./images/grapes.png" alt="Grapes">
+                    <div class="product-info">
+                        <p>Grapes</p>
+                        <p class="price">₨ 400</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="500">
+                    <img src="./images/pineapple.png" alt="Pineapple">
+                    <div class="product-info">
+                        <p>Pineapple</p>
+                        <p class="price">₨ 500</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetables Section -->
+            <div id="vegetables" class="product-section hidden">
+                <h2>Vegetables</h2>
+                <div class="product" data-price="300">
+                    <img src="./images/beetroot.png" alt="Beetroot">
+                    <div class="product-info">
+                        <p>Beetroot</p>
+                        <p class="price">₨ 300</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="200">
+                    <img src="./images/bell pepper red.png" alt="Bell Pepper">
+                    <div class="product-info">
+                        <p>Bell Pepper</p>
+                        <p class="price">₨ 200</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="420">
+                    <img src="./images/brinjals.png" alt="Brinjal">
+                    <div class="product-info">
+                        <p>Brinjal</p>
+                        <p class="price">₨ 420</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="100">
+                    <img src="./images/carrot.png" alt="Carrot">
+                    <div class="product-info">
+                        <p>Carrots</p>
+                        <p class="price">₨ 100</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="50">
+                    <img src="./images/cabbage.jpg" alt="Cabbage">
+                    <div class="product-info">
+                        <p>Cabbage</p>
+                        <p class="price">₨ 50</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="100">
+                    <img src="./images/big_onion.png" alt="Onion">
+                    <div class="product-info">
+                        <p>Onion</p>
+                        <p class="price">₨ 100</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="300">
+                    <img src="./images/Broccoli.png" alt="Broccoli">
+                    <div class="product-info">
+                        <p>Broccoli</p>
+                        <p class="price">₨ 300</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dairy Produce Section -->
+            <div id="dairy" class="product-section hidden">
+                <h2>Dairy Produce</h2>
+                <div class="product" data-price="500">
+                    <img src="./images/milk.png" alt="Fresh Milk">
+                    <div class="product-info">
+                        <p>Fresh Milk</p>
+                        <p class="price">₨ 500</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="200">
+                    <img src="./images/oat_milk.png" alt="Oat Milk">
+                    <div class="product-info">
+                        <p>Oat Milk</p>
+                        <p class="price">₨ 200</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="90">
+                    <img src="./images/youghrt.png" alt="Yoghurt">
+                    <div class="product-info">
+                        <p>Yoghurt</p>
+                        <p class="price">₨ 90</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1200">
+                    <img src="./images/cheese.png" alt="Cheese">
+                    <div class="product-info">
+                        <p>Cheese</p>
+                        <p class="price">₨ 1200</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1160">
+                    <img src="./images/vanilla ice cream.png" alt="Vanilla Ice Cream">
+                    <div class="product-info">
+                        <p>Vanilla Ice Cream</p>
+                        <p class="price">₨ 1160</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1160">
+                    <img src="./images/chocolate.png" alt="Chocolate Ice Cream">
+                    <div class="product-info">
+                        <p>Chocolate Ice Cream</p>
+                        <p class="price">₨ 1160</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meat and Seafood Section -->
+            <div id="meat" class="product-section hidden">
+                <h2>Meat and Seafood</h2>
+                <div class="product" data-price="1200">
+                    <img src="./images/drumsticks.png" alt="Chicken">
+                    <div class="product-info">
+                        <p>Chicken</p>
+                        <p class="price">₨ 1200</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1800">
+                    <img src="./images/beef.png" alt="Beef">
+                    <div class="product-info">
+                        <p>Beef</p>
+                        <p class="price">₨ 1800</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1200">
+                    <img src="./images/tuna.png" alt="Tuna Fish">
+                    <div class="product-info">
+                        <p>Tuna Fish</p>
+                        <p class="price">₨ 1102</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1200">
+                    <img src="./images/thalapath.png" alt="Thalapath">
+                    <div class="product-info">
+                        <p>Thalapath</p>
+                        <p class="price">₨ 1000</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="1900">
+                    <img src="./images/mutton.png" alt="Mutton">
+                    <div class="product-info">
+                        <p>Mutton</p>
+                        <p class="price">₨ 1900</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="900">
+                    <img src="./images/prawn.png" alt="Prawns">
+                    <div class="product-info">
+                        <p>Prawns</p>
+                        <p class="price">₨ 900</p>
+                        <input type="number" min="0" placeholder="Kg">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="baking" class="product-section hidden">
+                <h2>Baking and Cooking Ingredients</h2>
+                <div class="product" data-price="150">
+                    <img src="./images/flour_cake.png" alt="Flour">
+                    <div class="product-info">
+                        <p>Flour</p>
+                        <p class="price">₨ 150</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="150">
+                    <img src="./images/baking_powder.png" alt="Baking Powder">
+                    <div class="product-info">
+                        <p>Baking Powder</p>
+                        <p class="price">₨ 150</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="250">
+                    <img src="./images/cocoa_powder.png" alt="Cocoa Powder">
+                    <div class="product-info">
+                        <p>Cocoa Powder</p>
+                        <p class="price">₨ 250</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="350">
+                    <img src="./images/Tumeric_Powder.png" alt="Turmeric Powder">
+                    <div class="product-info">
+                        <p>Turmeric Powder</p>
+                        <p class="price">₨ 350</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="150">
+                    <img src="./images/chilli_powder.png" alt="Chily Pieces">
+                    <div class="product-info">
+                        <p>Chily Pieces</p>
+                        <p class="price">₨ 150</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-price="150">
+                    <img src="./images/salt.png" alt="Salt">
+                    <div class="product-info">
+                        <p>Salt</p>
+                        <p class="price">₨ 150</p>
+                        <input type="number" min="0" placeholder="Quantity">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Cart</h2>
+            <table id="current-items">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be injected here -->
+                </tbody>
+            </table>
+            <p id="total-price">₨ 0.00</p>
+            <button id="addto">Add to favorites</button>
+            <button id="apply">Apply favorites</button>
+
+            <button id="clear-cart-button">Clear Cart</button>
+            <button id="checkout-button" onclick="location.href='./checkout.html'">Buy Now</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

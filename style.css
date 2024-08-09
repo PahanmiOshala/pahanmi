@@ -1,0 +1,383 @@
+/* General Styles */
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #ff4081 0%, #f50057 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 20px 20px; /* Curved bottom corners */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Category Section Styles */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.category-buttons button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-buttons button:hover {
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Sidebar Styles */
+/* Button Styles in Sidebar */
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #ff6f61; /* Solid background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px; /* More rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s, box-shadow 0.3s; /* No background transition */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar button:hover {
+  transform: scale(1.05); /* Slightly scales up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Add a subtle hover effect */
+.sidebar button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 105, 97, 0.5); /* Focus ring for accessibility */
+}
+
+
+
+/* Content Styles */
+.content {
+  flex: 3;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering products */
+}
+
+/* Product Section Styles */
+.product-section {
+  display: none;
+}
+
+.product-section.show {
+  display: block;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/black-noise.png');
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.product input {
+  width: 80px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.product button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #00bcd4 0%, #03a9f4 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product button:hover {
+  background: linear-gradient(135deg, #03a9f4 0%, #00bcd4 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Cart Area Styles */
+.cart {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 320px;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+}
+
+/* Cart Heading Styles */
+.cart h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  border-bottom: 2px solid #007bff; /* Add a border to highlight the heading */
+  padding-bottom: 10px;
+}
+
+/* Cart Table Styles */
+.cart table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.cart table th, .cart table td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.cart table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.cart table td {
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.cart table tr:nth-child(even) td {
+  background-color: #f2f2f2; /* Zebra stripe effect for even rows */
+}
+
+.cart table tr:last-child td {
+  border-bottom: none; /* Remove border from last row */
+}
+
+/* Cart Total Price Styles */
+.cart #total-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+  margin-top: 20px;
+  border-top: 2px solid #007bff;
+  padding-top: 10px;
+}
+
+/* Cart Buttons Styles */
+.cart button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Buy Now Button */
+#checkout-button {
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  color: white;
+}
+
+#checkout-button:hover {
+  background: linear-gradient(135deg, #218838 0%, #28a745 100%);
+}
+
+/* Clear Cart Button */
+.clear-cart-button {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.clear-cart-button:hover {
+  background: linear-gradient(135deg, #c82333 0%, #dc3545 100%);
+}
+
+/* Buy Now Button */
+#checkout-button {
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+#checkout-button:hover {
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+}
+
+/* Clear Cart Button */
+.clear-cart-button {
+  background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.clear-cart-button:hover {
+  background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+}
+
+/* Category Tables */
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.category-table th, .category-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.category-table th {
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+}
+
+.category-table td {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar {
+    min-width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  
+  .product button {
+    margin-top: 5px;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 0px;
+  }
+  .cart {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+}
